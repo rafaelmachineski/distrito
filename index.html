@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="O Distrito Beer é um bar rústico e familiar em Foz do Iguaçu. Ambiente eclético, espetinhos saborosos, porções deliciosas e cerveja sempre gelada. Sinta-se em casa!">
+    <meta name="description"
+        content="O Distrito Beer é um bar rústico e familiar em Foz do Iguaçu. Ambiente eclético, espetinhos saborosos, porções deliciosas e cerveja sempre gelada. Sinta-se em casa!">
 
 
     <title>Distrito Beer - Foz do Iguaçu</title>
@@ -31,7 +32,7 @@
             margin-bottom: 0;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
         }
-        
+
         .section-title {
             color: #f58b35 !important;
         }
@@ -109,98 +110,7 @@
             margin-bottom: 1.5rem;
         }
 
-        .about-img {
-            border-radius: 12px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 450px;
-        }
 
-        .menu-item {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            background: #fff;
-        }
-
-        .menu-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .menu-item img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-        }
-
-        .menu-item-content {
-            padding: 1rem;
-        }
-
-        .menu-item-content h3 {
-            margin-bottom: 0.5rem;
-            color: #f76c6c;
-        }
-
-        .menu-item-content p {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 0.8rem;
-        }
-
-        .menu-item-content .price {
-            font-weight: 700;
-            color: #222;
-        }
-
-        .gallery img {
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-        }
-
-        .contact-form label {
-            font-weight: 600;
-            color: #333;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 0.7rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1rem;
-            resize: vertical;
-            width: 100%;
-        }
-
-        .contact-form button {
-            background: #f76c6c;
-            border: none;
-            padding: 0.8rem 1.2rem;
-            color: white;
-            font-weight: 700;
-            font-size: 1rem;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background: #d04141;
-        }
 
         footer {
             background: #111;
@@ -221,9 +131,19 @@
             color: #d04141;
         }
 
-        .carousel-item.active {
-            display: block;
-            height: auto;
+
+
+        .feature-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            background-color: #fdf1ed;
         }
     </style>
 </head>
@@ -254,114 +174,99 @@
 
 
     <main>
+        <!-- Hero permanece como está -->
         <section class="hero" id="hero">
             <div class="hero-content">
-                <img src="distrito-beer.png" loading="lazy" alt="Ambiente rústico e familiar do Distrito Beer com espetinhos e drinks" class="img-fluid mb-4" style="width: 400px; height: auto;" />
+                <img src="distrito-beer.png" loading="lazy"
+                    alt="Ambiente rústico e familiar do Distrito Beer com espetinhos e drinks" class="img-fluid mb-4"
+                    style="width: 400px; height: auto;" />
                 <h1>Bem-vindo ao Distrito Beer</h1>
                 <p>Cervejas, drinks, porções e espetinhos</p>
             </div>
         </section>
 
-        <div class="container-fluid px-0 d-flex flex-wrap justify-content-center align-items-center gap-4">
-            <section id="about" class="d-flex flex-wrap align-items-center justify-content-center mb-4 px-0">
-
-                <div class="container my-5">
-                    <div class="row justify-content-center align-items-start">
-                        <div class="col-12 col-md-6 mb-4 mb-md-0">
-                            <img src="img/2.png" loaidng="lazy" class="about-img img-fluid" alt="Sobre Nós" />
-                        </div>
-
-                        <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column">
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <h2 class="section-title">Sobre o bar</h2>
-                                    <p class="lead">O Distrito Beer é um bar localizado em Foz do Iguaçu,
-                                        especializado em cervejas artesanais, drinks exclusivos e porções deliciosas. Com um
-                                        ambiente acolhedor e
-                                        descontraído, o bar é o lugar perfeito para relaxar com amigos e desfrutar de uma
-                                        experiência única.</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                                    <h2 class="section-title">Aqui você encontra:</h2>
-                                    <ul class="lead align-items-start text-start">
-                                        <li>Cervejas e Drinks</li>
-                                        <li>Porções e espetinhos</li>
-                                        <li>Música ao vivo</li>
-                                        <li>Jogos de bar</li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <h2 class="section-title">Atendimento</h2>
-                                    <p class="lead">Terça a Domingo: 17h às 03h</p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-12">
-                                    <h2 class="section-title">Localização</h2>
-                                    <h1 class="lead">R. Belo Horizonte - Jardim Petropolis, Foz do Iguaçu - PR</h1>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.1238235726106!2d-54.57835187958071!3d-25.488094059300707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f69b2f8b311459%3A0xa7c1b4831d63e11d!2sDISTRITO%20BEER!5e0!3m2!1spt-BR!2sbr!4v1748044482668!5m2!1spt-BR!2sbr"
-                                        width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-
-                </div>
-        </div>
-        </section>
-        </div>
-
-
-
-
-
-        <section id="location" class="d-flex flex-wrap align-items-center justify-content-center  px-0">
-
+        <!-- Seção: Sobre o Bar -->
+        <section id="about" class="py-5">
             <div class="container">
-
-                <div class="row justify-content-center ">
-                    <div
-                        class="col-12 col-md-6  mb-md-0 d-flex flex-column align-items-center text-start justify-content">
-
-
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="img/2.png" class="about-img img-fluid" alt="Sobre o Bar">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="section-title">Sobre o bar</h2>
+                        <p class="lead">
+                            O Distrito Beer é um bar localizado em Foz do Iguaçu, especializado em cervejas artesanais,
+                            drinks exclusivos e porções deliciosas.
+                            Com um ambiente acolhedor e descontraído, é o lugar perfeito para relaxar com amigos e
+                            curtir uma noite inesquecível.
+                        </p>
                     </div>
                 </div>
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
         </section>
 
+        <!-- Seção: Aqui Você Encontra -->
+        <section id="features" class="py-5" >
+            <div class="container text-center">
+                <h2 class="section-title text-center mb-5">Aqui você encontra</h2>
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-card">🍺<br>Cervejas & Drinks</div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-card">🍢<br>Porções & Espetinhos</div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-card">🎶<br>Música ao Vivo</div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="feature-card">🎯<br>Jogos de Bar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-        </div>
+        <!-- Seção: Horário de Atendimento -->
+        <section id="horarios" class="py-5 text-white" style="background-color: #222;">
+            <div class="container text-center">
+                <h2 class="section-title">Horário de Atendimento</h2>
+                <p class="lead">🕒 Terça a Domingo: 17h às 03h</p>
+                <p class="small">Fechamos às Segundas</p>
+            </div>
+        </section>
 
+        <section id="contato-localizacao" class="py-5" >
+            <div class="container text-center">
+                <div class="row g-4">
+                    <!-- Localização -->
+                    <div class="col-md-6">
+                        <h2 class="section-title">Localização</h2>
+                        <p class="lead">R. Belo Horizonte - Jardim Petropolis, Foz do Iguaçu - PR</p>
+                        <div class="ratio ratio-1x1 w-50 mx-auto" style="max-width: 300px;">
+                            <iframe class="rounded"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.1238235726106!2d-54.57835187958071!3d-25.488094059300707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f69b2f8b311459%3A0xa7c1b4831d63e11d!2sDISTRITO%20BEER!5e0!3m2!1spt-BR!2sbr!4v1748044482668!5m2!1spt-BR!2sbr"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
 
-
-
-
+                    <!-- Contato -->
+                    <div class="col-md-6">
+                        <h2 class="section-title">Fale com a gente</h2>
+                        <form class="contact-form">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea id="mensagem" rows="4" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
